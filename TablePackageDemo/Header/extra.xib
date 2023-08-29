@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="extra" customModule="TablePackageDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="-18" y="20"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CheckBoxCell" rowHeight="40" id="2lS-tu-8Yc" customClass="CheckBoxCell" customModule="TablePackageDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2lS-tu-8Yc" id="qSE-t1-ONl">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3z-oX-RjT">
+                        <rect key="frame" x="20" y="6.6666666666666679" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="oyg-p6-ZTx"/>
+                            <constraint firstAttribute="width" constant="24" id="r0y-o4-lGU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                        <color key="tintColor" red="0.012847910489999999" green="0.76499998570000005" blue="0.72887977010000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Button" image="icn_slot"/>
+                        <state key="selected" image="icn_slotselect"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="BHK" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAT-do-gUV">
+                        <rect key="frame" x="52" y="10" width="59.333333333333343" height="17"/>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="₹ 10,000.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51Z-ah-dUg">
+                        <rect key="frame" x="229" y="10" width="81" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="81" id="4xt-pn-PQe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="q4R-6e-hSY">
+                        <rect key="frame" x="116.33333333333331" y="1.6666666666666679" width="107.66666666666669" height="34"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yV1-Uw-4Wz">
+                                <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                <color key="backgroundColor" red="0.01176470588" green="0.76499998570000005" blue="0.72887977010000005" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yV1-Uw-4Wz" secondAttribute="height" multiplier="1:1" id="7ky-D0-PYQ"/>
+                                    <constraint firstAttribute="width" constant="34" id="Ay8-yA-PWr"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="-">
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="16"/>
+                                    <color key="baseForegroundColor" red="0.01176470588" green="0.76499998570000005" blue="0.72887977010000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqc-mD-8xx">
+                                <rect key="frame" x="49.000000000000014" y="0.0" width="9.6666666666666643" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHd-qz-zRQ">
+                                <rect key="frame" x="73.666666666666671" y="0.0" width="34" height="34"/>
+                                <color key="backgroundColor" red="0.01176470588" green="0.76499998570000005" blue="0.72887977010000005" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+">
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="16"/>
+                                    <color key="baseForegroundColor" red="0.01176470588" green="0.76499998570000005" blue="0.72887977010000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="hHd-qz-zRQ" firstAttribute="height" secondItem="yV1-Uw-4Wz" secondAttribute="height" id="EIL-Ev-fzG"/>
+                            <constraint firstItem="hHd-qz-zRQ" firstAttribute="width" secondItem="yV1-Uw-4Wz" secondAttribute="width" id="SGO-en-wtG"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="f3z-oX-RjT" firstAttribute="leading" secondItem="qSE-t1-ONl" secondAttribute="leading" constant="20" id="2hB-bA-j0J"/>
+                    <constraint firstItem="f3z-oX-RjT" firstAttribute="centerY" secondItem="BAT-do-gUV" secondAttribute="centerY" id="5Cn-Gn-WSM"/>
+                    <constraint firstItem="BAT-do-gUV" firstAttribute="top" secondItem="qSE-t1-ONl" secondAttribute="top" constant="10" id="5rA-sR-6DI"/>
+                    <constraint firstItem="q4R-6e-hSY" firstAttribute="leading" secondItem="BAT-do-gUV" secondAttribute="trailing" constant="5" id="9z5-ip-ei1"/>
+                    <constraint firstAttribute="trailing" secondItem="51Z-ah-dUg" secondAttribute="trailing" constant="10" id="fLa-zd-9UQ"/>
+                    <constraint firstItem="BAT-do-gUV" firstAttribute="leading" secondItem="f3z-oX-RjT" secondAttribute="trailing" constant="8" id="jas-hF-kAs"/>
+                    <constraint firstItem="51Z-ah-dUg" firstAttribute="leading" secondItem="q4R-6e-hSY" secondAttribute="trailing" constant="5" id="sW8-PW-RVx"/>
+                    <constraint firstItem="q4R-6e-hSY" firstAttribute="centerY" secondItem="f3z-oX-RjT" secondAttribute="centerY" id="sqj-MJ-wgS"/>
+                    <constraint firstItem="51Z-ah-dUg" firstAttribute="centerY" secondItem="BAT-do-gUV" secondAttribute="centerY" id="x1R-0Z-SeV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="5sz-xp-W2V"/>
+            <connections>
+                <outlet property="btnCheckBoxClick" destination="f3z-oX-RjT" id="wPu-ew-qe9"/>
+                <outlet property="btnMinus" destination="yV1-Uw-4Wz" id="crc-rb-258"/>
+                <outlet property="btnPlus" destination="hHd-qz-zRQ" id="uk8-d5-Myl"/>
+                <outlet property="lblBHK" destination="BAT-do-gUV" id="WnV-dV-kap"/>
+                <outlet property="lblPrice" destination="51Z-ah-dUg" id="k1s-Gr-g3O"/>
+                <outlet property="lblQuantity" destination="rqc-mD-8xx" id="vp6-WW-bk5"/>
+                <outlet property="stackView" destination="q4R-6e-hSY" id="Dwz-70-6MH"/>
+            </connections>
+            <point key="canvasLocation" x="200" y="115.49295774647888"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icn_slot" width="24" height="24"/>
+        <image name="icn_slotselect" width="24" height="24"/>
+    </resources>
+</document>
