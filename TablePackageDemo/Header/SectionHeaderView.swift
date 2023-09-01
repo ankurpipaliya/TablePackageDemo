@@ -18,6 +18,10 @@ class SectionHeaderView: UITableViewHeaderFooterView {
     
     func configureHeaderView(specification: Specification) {
         sectionTitleLabel.text = specification.name[0]
-        sectionSubtitleLabel.text = "Choose 1"
+        if specification.type == 1 {
+            sectionSubtitleLabel.text = "Choose 1"
+        } else {
+            sectionSubtitleLabel.text = "Choose Upto 1"
+        }
     }
 }

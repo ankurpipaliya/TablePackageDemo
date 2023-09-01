@@ -13,8 +13,9 @@ class MakeYourOwnPackageVC: UIViewController
     @IBOutlet weak var lblTitleHeader: UILabel!
     @IBOutlet weak var activityView: UIView!
     @IBOutlet weak var btnTotal: UIButton!
-
+    
     let viewModel = ViewModel()
+    var callBack: ((_ totalPackage: String)-> Void)?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +54,15 @@ class MakeYourOwnPackageVC: UIViewController
         self.viewModel.calculateGrandTotal {
             let totalString = String(format: "%.2f", viewModel.grandTotal)
             btnTotal.setTitle("Add to cart: \(totalString)", for: .normal)
+        }
+    }
+    
+    @IBAction func btnTotalTapped(_ sender: Any) {
+        self.viewModel.calculateGrandTotal {
+            let totalString = String(format: "%.2f", viewModel.grandTotal)
+            callBack?(totalString)
+            print(totalString)
+            navigationController?.popViewController(animated: true)
         }
     }
 }

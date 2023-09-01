@@ -28,15 +28,27 @@
                                     <action selector="btnCustomizeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QCm-1l-K1Y"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tE5-GG-4Ip">
+                                <rect key="frame" x="100" y="459" width="193" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="tE5-GG-4Ip" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="RKC-Bj-v6V"/>
                             <constraint firstItem="5vc-nB-U9R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bs2-r3-bjm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tE5-GG-4Ip" secondAttribute="trailing" constant="100" id="hBg-La-NBq"/>
                             <constraint firstItem="5vc-nB-U9R" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lTp-ae-2m6"/>
+                            <constraint firstItem="tE5-GG-4Ip" firstAttribute="top" secondItem="5vc-nB-U9R" secondAttribute="bottom" constant="8" symbolic="YES" id="wZI-Bd-Wqc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ITu-7B-7Es"/>
+                    <connections>
+                        <outlet property="lblPackageTotal" destination="tE5-GG-4Ip" id="eEL-rc-QCt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -104,6 +116,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Add to Cart">
                                             <color key="baseForegroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnTotalTapped:" destination="INI-DD-p7E" eventType="touchUpInside" id="qwG-Tq-I8h"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>

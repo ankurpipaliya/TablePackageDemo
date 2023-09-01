@@ -42,6 +42,13 @@ class CheckBoxCell: UITableViewCell {
         self.lblBHK.text = list.name[0]
         let stringPrice = String(format: "%.2f", list.price)
         self.lblPrice.text = "₹" + " " + stringPrice
+        print(list.price)
+        // to diable the check box if price is 0.
+        if list.price == 0.0 {
+            btnCheckBoxClick.isEnabled = false
+        } else {
+            btnCheckBoxClick.isEnabled = true
+        }
         self.btnCheckBoxClick.isSelected = list.isDefaultSelected
         self.lblQuantity.text = " \(list.quantity + 1 )" 
         
@@ -50,13 +57,13 @@ class CheckBoxCell: UITableViewCell {
         } else {
             self.stackView.isHidden = true
         }
-//button property hide show
-//        if list.quantity >= 1 {
-//            btnMinus.isEnabled = true
-//        } else {
-//            btnMinus.isEnabled = false
-//            //btnMinus.backgroundColor = .brown
-//        }
+      //  button property hide show
+        if list.quantity >= 1 {
+            btnMinus.isEnabled = true
+        } else {
+            btnMinus.isEnabled = false
+            //btnMinus.backgroundColor = .brown
+        }
     }
 
     @objc private func checkBoxButtonTapped() {
